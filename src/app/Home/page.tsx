@@ -48,7 +48,7 @@ const Homepage = () => {
               <FaGithub size={24} />
             </Link>
             <Link
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/asadkhan47400/?igsh=b2pmeWgwcmlrNDhi#"
               target="_blank"
               className="p-3 bg-transparent border-2 border-[#ba294d] text-[#ba294d] rounded-full hover:bg-[#ba294d] hover:text-black transition"
               aria-label="Instagram"

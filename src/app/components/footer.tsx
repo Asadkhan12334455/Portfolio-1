@@ -7,27 +7,27 @@ const Footer = () => {
       {/* Social Links */}
       <div className="text-center pb-6 text-[#ba294d] flex justify-center items-center">
         <a
-          href="https://www.linkedin.com/in/muhammad-alwaz-0775a92b7/"
+          href="https://www.linkedin.com/in/muhammad-asad-626322285/"
           className="text-2xl border-2 border-[#ba294d] w-10 h-10 flex items-center justify-center rounded-full my-2 mx-4 transition-transform duration-300 ease-in-out hover:bg-[#ba294d] hover:shadow-lg hover:scale-110 hover:text-black"
         >
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/Alwaz12"
+          href="https://github.com/Asadkhan12334455/"
           target="_blank"
           className="text-2xl border-2 border-[#ba294d] w-10 h-10 flex items-center justify-center rounded-full my-2 mx-4 transition-transform duration-300 ease-in-out hover:bg-[#ba294d] hover:shadow-lg hover:scale-110 hover:text-black"
         >
           <FaGithub />
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/asadkhan47400/?igsh=b2pmeWgwcmlrNDhi#"
           target="_blank"
           className="text-2xl border-2 border-[#ba294d] w-10 h-10 flex items-center justify-center rounded-full my-2 mx-4 transition-transform duration-300 ease-in-out hover:bg-[#ba294d] hover:shadow-lg hover:scale-110 hover:text-black"
         >
           <FaInstagram />
         </a>
         <a
-          href="https://www.youtube.com/"
+          href="https://www.youtube.com/KhanLion23"
           target="_blank"
           className="text-2xl border-2 border-[#ba294d] w-10 h-10 flex items-center justify-center rounded-full my-2 mx-4 transition-transform duration-300 ease-in-out hover:bg-[#ba294d] hover:shadow-lg hover:scale-110 hover:text-black"
         >
