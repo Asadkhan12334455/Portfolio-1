@@ -1,5 +1,4 @@
-// schemas/contact.js
-export default {
+const contactSchema = {
   name: 'contact',
   title: 'Contact Form Submissions',
   type: 'document',
@@ -11,3 +10,5 @@ export default {
     { name: 'message', title: 'Message', type: 'text' },
   ],
 };
+
+export default contactSchema;
