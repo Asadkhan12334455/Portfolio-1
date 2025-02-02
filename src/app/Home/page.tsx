@@ -1,10 +1,21 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import { FaGithub, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
+
+const roles = ['Front-End Developer', 'Full Stack Developer', 'UI/UX Designer', 'YouTuber'];
 
 const Homepage = () => {
+  const [currentRole, setCurrentRole] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRole((prev) => (prev + 1) % roles.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
       <section
@@ -28,7 +39,9 @@ const Homepage = () => {
           </h1>
 
           <h3 className="text-4xl font-bold mt-4">
-            I&apos;m a <span className="text-[#ba294d]">Front-End Developer</span>
+            I&apos;m a <span className="text-[#ba294d] transition-opacity duration-1000 ease-in-out">
+              {roles[currentRole]}
+            </span>
           </h3>
           <p className="text-lg mt-4">
             I am a passionate Front-End Developer currently enhancing my skills
