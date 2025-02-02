@@ -48,6 +48,7 @@ export default function Contact() {
         setStatusMessage(result.error || 'Something went wrong, please try again.');
       }
     } catch (error) {
+      console.error(error); // Fixed unused variable error
       setStatusMessage('Failed to send message, please try again.');
     } finally {
       setIsSubmitting(false);
@@ -139,7 +140,7 @@ export default function Contact() {
       )}
 
       <p className="mt-10 text-center text-xl font-semibold text-gray-300">
-        Let's build something amazing together! 🚀 Drop me a message now!
+        Let&apos;s build something amazing together! 🚀 Drop me a message now!
       </p>
     </section>
   );
