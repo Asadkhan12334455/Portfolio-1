@@ -1,3 +1,4 @@
+// schema/contact.js
 const contactSchema = {
   name: 'contact',
   title: 'Contact Form Submissions',

@@ -47,7 +47,7 @@ export default function Contact() {
       } else {
         setStatusMessage(result.error || 'Something went wrong, please try again.');
       }
-    } catch {
+    } catch (error) {
       setStatusMessage('Failed to send message, please try again.');
     } finally {
       setIsSubmitting(false);
@@ -91,7 +91,7 @@ export default function Contact() {
         </div>
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           <input
-            type="tel"
+            type="number"
             name="phone"
             placeholder="Phone Number"
             value={formData.phone}
@@ -129,7 +129,9 @@ export default function Contact() {
       {statusMessage && (
         <div className="mt-4 text-center">
           <p
-            className={`text-lg font-semibold ${statusMessage.includes('success') ? 'text-green-500' : 'text-red-500'}`}
+            className={`text-lg font-semibold ${
+              statusMessage.includes('success') ? 'text-green-500' : 'text-red-500'
+            }`}
           >
             {statusMessage}
           </p>
@@ -137,7 +139,7 @@ export default function Contact() {
       )}
 
       <p className="mt-10 text-center text-xl font-semibold text-gray-300">
-        Let&apos;s build something amazing together! 🚀 Drop me a message now!
+        Let's build something amazing together! 🚀 Drop me a message now!
       </p>
     </section>
   );
